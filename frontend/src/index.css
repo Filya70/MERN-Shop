@@ -5,3 +5,11 @@ main {
 i {
   margin-right: 5px;
 }
+
+h4 {
+  padding: 1rem 0;
+}
+
+.rating {
+  margin: 0.1rem;
+}
