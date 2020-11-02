@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card } from 'react-bootstrap';
 import { Rating } from './';
+import priceFormat from '../public/priceFormat';
 
 const Product = ({ product }) => {
   return (
@@ -19,7 +20,7 @@ const Product = ({ product }) => {
         <Card.Text as="div">
           <Rating value={product.rating} text={`${product.numReviews} оценок`} color="red" />
         </Card.Text>
-        <Card.Text as="h4">{product.price}&#8381;</Card.Text>
+        <Card.Text as="h4">{priceFormat(product.price)}</Card.Text>
       </Card.Body>
     </Card>
   );
